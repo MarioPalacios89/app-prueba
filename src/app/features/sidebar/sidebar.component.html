@@ -1,0 +1,59 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar>
+      <div class="logo">
+        <img src="assets/images/gob.pe.rojo.svg" alt="" />
+      </div>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a
+        *ngFor="let item of menuItems"
+        mat-list-item
+        [routerLink]="'/' + item.route"
+        ><mat-icon aria-label="Side nav toggle icon">{{ item.icon }}</mat-icon
+        >&nbsp;{{ item.title | titlecase }}
+      </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <h2 class="title" matSubheader>Servicios</h2>
+      <mat-divider></mat-divider>
+      <a
+        *ngFor="let item of menuItemsServices"
+        mat-list-item
+        [routerLink]="'/' + item.route"
+        ><mat-icon aria-label="Side nav toggle icon">{{ item.icon }}</mat-icon
+        >&nbsp;{{ item.title | titlecase }}
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="header" color="primary"   fxLayout
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0"
+     fxLayoutAligmnet="space-between center">
+
+        <div fxFlex>
+          <button
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+          >
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+          <span></span>
+        </div>
+        <div fxFlex>Portal de Aplicaciones</div>
+        <div fxFlex><img class="avatar" alt="avatar" src="assets/images/avatar/avatar.jpg"></div>
+    </mat-toolbar>
+    <app-main></app-main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
