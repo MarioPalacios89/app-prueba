@@ -26,7 +26,7 @@ export class SidebarComponent {
     {
       icon: 'verified',
       title: 'Autenticación',
-      route: '',
+      route: 'pages/autenticacion',
     },
     {
       icon: 'drive_file_rename_outline',
@@ -41,7 +41,7 @@ export class SidebarComponent {
     {
       icon: 'perm_data_setting',
       title: 'Agente Automatizado',
-      route: '',
+      route: 'pages/agente',
     },
     {
       icon: 'home_work',
