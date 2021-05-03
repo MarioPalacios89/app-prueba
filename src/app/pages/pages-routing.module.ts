@@ -9,6 +9,7 @@ import {FirmaDigitalComponent} from './firma-digital/firma-digital.component';
 import {IndexComponent} from './index/index.component';
 import {NuevaAplicacionComponent} from './nueva-aplicacion/nueva-aplicacion.component';
 import {ValidacionFirmaComponent} from './validacion-firma/validacion-firma.component';
+import {ListaAplicacionesComponent} from './lista-aplicaciones/lista-aplicaciones.component';
 
 const routes: Routes = [
   // {
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'index',
     component: IndexComponent,
+  },
+  {
+    path: 'lista',
+    component: ListaAplicacionesComponent,
   },
   {
     path: 'nueva-aplicacion',

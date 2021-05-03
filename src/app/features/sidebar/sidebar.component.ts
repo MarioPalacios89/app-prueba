@@ -32,12 +32,12 @@ export class SidebarComponent {
     {
       icon: 'drive_file_rename_outline',
       title: 'Firma Digital',
-      route: 'page/firma-digital',
+      route: 'pages/firma-digital',
     },
     {
       icon: 'check',
       title: 'Validación de Firma',
-      route: 'page/validacion-firma',
+      route: 'pages/validacion-firma',
     },
     {
       icon: 'perm_data_setting',
@@ -47,7 +47,7 @@ export class SidebarComponent {
     {
       icon: 'home_work',
       title: 'Domicilio Digital',
-      route: 'page/domicilio',
+      route: 'pages/domicilio',
     },
   ];
 
