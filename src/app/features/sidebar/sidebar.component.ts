@@ -14,7 +14,7 @@ export class SidebarComponent {
     {
       icon: 'home',
       title: 'Inicio',
-      route: '',
+      route: 'pages/inicio',
     },
     {
       icon: 'settings_applications',

@@ -42,7 +42,7 @@ const routes: Routes = [
     component: FirmaDigitalComponent,
   },
   {
-    path: 'index',
+    path: 'inicio',
     component: IndexComponent,
   },
   {

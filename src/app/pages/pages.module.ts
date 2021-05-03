@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AngularMaterialModule } from '../core/angular-material/angular-material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { FeaturesModule } from '../features/features.module';
@@ -32,6 +33,7 @@ import { ValidacionFirmaComponent } from './validacion-firma/validacion-firma.co
   imports: [
     CommonModule,
     AngularMaterialModule,
+    FlexLayoutModule,
     PagesRoutingModule,
     FeaturesModule
   ],

@@ -1,0 +1,125 @@
+.body {
+  background-color: #fafdfb;
+  width: 100%;
+  height: 100%;
+}
+.seccion-principal {
+  .mat-card {
+    border-top: 2px solid #62b984 !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0 8px 8px 8px;
+    margin-bottom: 20px;
+    height: calc(100% - 12px);
+    font-family: "Nunito", arial;
+    width: 100%;
+    .mat-icon {
+      font-size: 80px;
+      height: 80px;
+      width: 80px;
+      vertical-align: middle;
+      color: #62b984;
+      padding-bottom: 20px;
+    }
+
+    .contenido {
+      min-height: 120px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 25px;
+      padding-bottom: 30px;
+      .titulo {
+        text-align: left;
+        font-size: 1.3em;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #6c757d;
+        font-family: "Nunito", arial;
+      }
+      .item {
+        margin-bottom: 10px;
+        input,
+        text-area {
+          color: #000;
+        }
+      }
+      img {
+        height: auto;
+        vertical-align: middle;
+        width: 60%;
+      }
+    }
+
+    .mat-card-actions {
+      padding: 15px;
+      border-top: 1px solid #e8e8e8;
+      button {
+        font-size: 16px;
+        font-family: "Nunito", arial;
+        background-color: #62b984;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.seccion-secundaria {
+  .mat-card {
+    border-top: 2px solid #62b984 !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 8px;
+    margin-bottom: 20px;
+    height: calc(100% - 12px);
+    font-family: "Nunito", arial;
+    width: 100%;
+    .mat-icon {
+      font-size: 80px;
+      height: 80px;
+      width: 80px;
+      vertical-align: middle;
+      color: #62b984;
+      padding-bottom: 20px;
+    }
+
+    .contenido {
+      min-height: 120px;
+      div:nth-child(1) {
+        img {
+          height: 60px;
+          margin-bottom: 10px;
+        }
+      }
+      div:nth-child(2) {
+        padding: 0 8px;
+        .titulo {
+          font-size: 1.3em;
+          color: #62B984;
+          font-weight: 500;
+        }
+        .description {
+          font-size: 1.3em;
+          color: #6c757d;
+          padding-top: 20px;
+          display: block;
+          span {
+            padding-bottom: 10px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .mat-card:hover {
+    transform: scale(1.05);
+    transition: transform 330ms ease-in, transform 660ms ease-out;
+  }
+}
+
+.titulo-seccion {
+  font-size: 1.3em;
+  color: #62b984;
+  font-weight: 500;
+  font-family: "Nunito", arial;
+}
