@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { AngularMaterialModule } from '../core/angular-material/angular-material.module';
 import { RouterModule } from '@angular/router';
-import { MainComponent } from './main/main.component';
+import { AngularMaterialModule } from '../core/angular-material/angular-material.module';
 import { FeaturesRoutingModule } from './features-routing.module';
+
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MainComponent } from './main/main.component';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
-  declarations: [SidebarComponent, MainComponent],
+  declarations: [SidebarComponent, MainComponent, HeaderComponent],
   imports: [
     CommonModule,
     FeaturesRoutingModule,
@@ -15,6 +17,6 @@ import { FeaturesRoutingModule } from './features-routing.module';
     AngularMaterialModule,
     RouterModule,
   ],
-  exports: [SidebarComponent],
+  exports: [SidebarComponent,HeaderComponent,MainComponent],
 })
 export class FeaturesModule {}

@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container class="sidenav-container" *ngIf="router.url !== '/pages/lista'">
   <mat-sidenav
     #drawer
     class="sidenav"
@@ -57,3 +57,4 @@
     <app-main></app-main>
   </mat-sidenav-content>
 </mat-sidenav-container>
+<app-main *ngIf="router.url === '/pages/lista'"></app-main>

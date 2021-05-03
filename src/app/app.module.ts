@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FeaturesModule } from "./features/features.module";
+import { PagesModule } from "./pages/pages.module";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FeaturesModule } from "./features/features.module";
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
-    FeaturesModule
+    FeaturesModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
