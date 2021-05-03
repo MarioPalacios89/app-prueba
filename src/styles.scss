@@ -106,3 +106,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     url("assets/fonts/nunito-v9-latin-800.svg#Nunito") format("svg");
   /* Legacy iOS */
 }
+
+
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #ced4da !important;
+}
+
+mat-label {
+  color: #6c757d ;
+}
+
+

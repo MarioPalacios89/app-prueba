@@ -22,42 +22,22 @@
             <div class="contenido" fxLayoutAlign="center stretch" fxFlex="88">
               <div fxFlex="100">
                 <h2 class="titulo">Información de la Aplicación</h2>
-                <div class="item" fxLayout="column">
-                  <label fxFlex>Nombre:</label>
-                  <input
-                    class="form-control py-2"
-                    type="text"
-                    fxFlex
-                    #searcher
-                  />
-                </div>
-                <div class="item" fxLayout="column">
-                  <label fxFlex>ID:</label>
-                  <input
-                    class="form-control py-2"
-                    type="text"
-                    fxFlex
-                    #searcher
-                  />
-                </div>
-                <div class="item" fxLayout="column">
-                  <label fxFlex>Descripción:</label>
-                  <input
-                    class="form-control py-2"
-                    type="text"
-                    fxFlex
-                    #searcher
-                  />
-                </div>
-                <div class="item" fxLayout="column">
-                  <label fxFlex>Url:</label>
-                  <input
-                    class="form-control py-2"
-                    type="text"
-                    fxFlex
-                    #searcher
-                  />
-                </div>
+                <mat-form-field appearance="outline" class="item" fxLayout="column">
+                  <mat-label>Nombre</mat-label>
+                  <input matInput>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="item" fxLayout="column">
+                  <mat-label>ID</mat-label>
+                  <input matInput>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="item" fxLayout="column">
+                  <mat-label>Descripción</mat-label>
+                  <input matInput>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="item" fxLayout="column">
+                  <mat-label>URL</mat-label>
+                  <input matInput>
+                </mat-form-field>
                 <div class="item" fxLayout="column">
                   <label fxFlex>Logo</label>
                   <div style="height: 150px; border: 1px solid #ced4da"></div>
@@ -77,33 +57,18 @@
                 <h2 class="titulo">Información de la Entidad</h2>
                 <div fxLayout="row">
                   <div fxFlex="60" fxFlex.gt-lg="60" fxFlex.lt-xl="100">
-                    <div class="item" fxLayout="column">
-                      <label fxFlex>RUC:</label>
-                      <input
-                        class="form-control py-2"
-                        type="text"
-                        fxFlex
-                        #searcher
-                      />
-                    </div>
-                    <div class="item" fxLayout="column">
-                      <label fxFlex>Nombre:</label>
-                      <input
-                        class="form-control py-2"
-                        type="text"
-                        fxFlex
-                        #searcher
-                      />
-                    </div>
-                    <div class="item" fxLayout="column">
-                      <label fxFlex>Dominio Autorizado:</label>
-                      <input
-                        class="form-control py-2"
-                        type="text"
-                        fxFlex
-                        #searcher
-                      />
-                    </div>
+                    <mat-form-field appearance="outline" class="item" fxLayout="column">
+                      <mat-label>RUC</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="item" fxLayout="column">
+                      <mat-label>Nombre</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="item" fxLayout="column">
+                      <mat-label>Dominio Autorizado</mat-label>
+                      <input matInput>
+                    </mat-form-field>
                   </div>
                   <div fxFlex="40" fxLayoutAlign="center center" fxHide.lt-xl>
                     <img src="assets/images/ico_entidad.png" />
@@ -118,42 +83,22 @@
                 <h2 class="titulo">Información del desarrollador</h2>
                 <div fxLayout="row">
                   <div fxFlex="60" fxFlex.gt-lg="60" fxFlex.lt-xl="100">
-                    <div class="item" fxLayout="column">
-                      <label fxFlex>Fecha:</label>
-                      <input
-                        class="form-control py-2"
-                        type="text"
-                        fxFlex
-                        #searcher
-                      />
-                    </div>
-                    <div class="item" fxLayout="column">
-                      <label fxFlex>DNI:</label>
-                      <input
-                        class="form-control py-2"
-                        type="text"
-                        fxFlex
-                        #searcher
-                      />
-                    </div>
-                    <div class="item" fxLayout="column">
-                      <label fxFlex>Nombres:</label>
-                      <input
-                        class="form-control py-2"
-                        type="text"
-                        fxFlex
-                        #searcher
-                      />
-                    </div>
-                    <div class="item" fxLayout="column">
-                      <label fxFlex>Apellidos:</label>
-                      <input
-                        class="form-control py-2"
-                        type="text"
-                        fxFlex
-                        #searcher
-                      />
-                    </div>
+                    <mat-form-field appearance="outline" class="item" fxLayout="column">
+                      <mat-label>Fecha</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="item" fxLayout="column">
+                      <mat-label>DNI</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="item" fxLayout="column">
+                      <mat-label>Nombres</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="item" fxLayout="column">
+                      <mat-label>Apellidos</mat-label>
+                      <input matInput>
+                    </mat-form-field>
                   </div>
                   <div fxFlex="40" fxLayoutAlign="center center" fxHide.lt-xl>
                     <img src="assets/images/ico_info_creacion.png" />

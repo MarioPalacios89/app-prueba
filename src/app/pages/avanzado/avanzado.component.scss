@@ -1,0 +1,75 @@
+.body {
+  background-color: #fafdfb;
+  width: 100%;
+  height: 100%;
+}
+.seccion-principal {
+  .mat-card {
+    border-top: 2px solid #62b984 !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0 8px 8px 8px;
+    margin-bottom: 20px;
+    height: calc(100% - 12px);
+    font-family: "Nunito", arial;
+    width: 100%;
+    .mat-icon {
+      font-size: 80px;
+      height: 80px;
+      width: 80px;
+      vertical-align: middle;
+      color: #62b984;
+      padding-bottom: 20px;
+    }
+
+    .contenido {
+      min-height: 120px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 25px;
+      padding-bottom: 30px;
+      .titulo {
+        text-align: left;
+        font-size: 1.3em;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #62b984;
+        font-family: "Nunito", arial;
+      }
+      .titulo.delete{
+        color: #AE271C;
+      }
+      .item {
+        margin-bottom: 10px;
+        input,
+        text-area {
+          color: #000;
+        }
+      }
+      img {
+        height: auto;
+        vertical-align: middle;
+        width: 60%;
+      }
+    }
+
+    .mat-card-actions {
+      padding: 15px;
+      border-top: 1px solid #e8e8e8;
+      button {
+        font-size: 16px;
+        font-family: "Nunito", arial;
+        background-color: #62b984;
+        color: #fff;
+      }
+
+      button.delete{
+        background-color: #AE271C;
+      }
+    }
+  }
+
+  .mat-card.delete{
+    border-color: #AE271C !important;
+  }
+}
