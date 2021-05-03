@@ -25,28 +25,12 @@
     <div fxFlex="20" fxFlex.gt-md="20%"></div>
     <div fxFlex="60" fxFlex.gt-md="60%" fxflexfill fxlayoutgap="10px grid">
       <div fxLayout="row wrap">
-        <div fxFlex="100" fxLayout="row" class="buscador">
-          <input
-            class="form-control py-2"
-            type="text"
-            placeholder="Buscar App"
-            fxFlex="30"
-            fxFlex.gt-md="30"
-            fxFlex.lt-lg="85"
-            #searcher
-            (keyup.enter)="filterServices(searcher.value)"
-          />
-          <span
-            class="input-group-append"
-            fxFlex="70"
-            fxFlex.gt-md="70"
-            fxFlex.lt-lg="15"
-          >
-            <button mat-stroked-button (click)="filterServices(searcher.value)" >
-              <mat-icon aria-label="Side nav toggle icon" >search</mat-icon>
-            </button>
-          </span>
-        </div>
+          <mat-form-field appearance="outline" fxFlex="100" fxLayout="row" class="buscador">
+            <mat-label>Buscar App</mat-label>
+            <input matInput  #searcher
+            (keyup.enter)="filterServices(searcher.value)">
+            <mat-icon matSuffix (click)="filterServices(searcher.value)">search</mat-icon>
+          </mat-form-field>
       </div>
       <br />
       <div fxLayout="row wrap" fxLayoutGap="28px grid">

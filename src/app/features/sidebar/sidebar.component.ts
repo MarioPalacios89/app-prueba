@@ -19,7 +19,7 @@ export class SidebarComponent {
     {
       icon: 'settings_applications',
       title: 'Avanzado',
-      route: '',
+      route: 'pages/avanzado',
     },
   ];
 
