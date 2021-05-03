@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { AgenteAutorizadoComponent } from './agente-autorizado/agente-autorizado.component';
 import { AutenticacionComponent } from './autenticacion/autenticacion.component';
+import { ListaAplicacionesComponent } from './lista-aplicaciones/lista-aplicaciones.component';
+=======
+import {AgenteAutorizadoComponent} from './agente-autorizado/agente-autorizado.component';
+import {AutenticacionComponent} from './autenticacion/autenticacion.component';
 import { Autentication2Component } from './autentication2/autentication2.component';
 import {AvanzadoComponent} from './avanzado/avanzado.component';
 import {DomicilioComponent} from './domicilio/domicilio.component';
@@ -9,6 +14,7 @@ import {FirmaDigitalComponent} from './firma-digital/firma-digital.component';
 import {IndexComponent} from './index/index.component';
 import {NuevaAplicacionComponent} from './nueva-aplicacion/nueva-aplicacion.component';
 import {ValidacionFirmaComponent} from './validacion-firma/validacion-firma.component';
+>>>>>>> 9ca3e6fe6cd3805056246851a3e26368f7e7855a
 
 const routes: Routes = [
   // {
@@ -25,6 +31,10 @@ const routes: Routes = [
     component: AutenticacionComponent,
   },
   {
+<<<<<<< HEAD
+    path: 'lista',
+    component: ListaAplicacionesComponent,
+=======
     path: 'autentication2',
     component: Autentication2Component,
   },
@@ -51,6 +61,7 @@ const routes: Routes = [
   {
     path: 'validacion-firma',
     component: ValidacionFirmaComponent,
+>>>>>>> 9ca3e6fe6cd3805056246851a3e26368f7e7855a
   },
 ];
 
