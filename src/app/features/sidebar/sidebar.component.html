@@ -12,22 +12,26 @@
         <img src="assets/images/gob.pe.rojo.svg" alt="" />
       </div>
     </mat-toolbar>
-    <mat-nav-list>
+    <mat-nav-list fxLayout="column">
       <a
         *ngFor="let item of menuItems"
         mat-list-item
         [routerLink]="'/' + item.route"
+        routerLinkActive="active-list-item"
+        fxFlex
         ><mat-icon aria-label="Side nav toggle icon">{{ item.icon }}</mat-icon
         >&nbsp;{{ item.title | titlecase }}
       </a>
     </mat-nav-list>
-    <mat-nav-list>
-      <h2 class="title" matSubheader>Servicios</h2>
-      <mat-divider></mat-divider>
+    <mat-nav-list fxLayout="column">
+      <h2 fxFlex class="title" matSubheader>Servicios</h2>
+      <mat-divider fxFlex></mat-divider>
       <a
         *ngFor="let item of menuItemsServices"
         mat-list-item
         [routerLink]="'/' + item.route"
+        routerLinkActive="active-list-item"
+        fxFlex
         ><mat-icon aria-label="Side nav toggle icon">{{ item.icon }}</mat-icon
         >&nbsp;{{ item.title | titlecase }}
       </a>

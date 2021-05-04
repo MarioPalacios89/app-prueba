@@ -8,15 +8,21 @@
   max-width: 250px;
 
   .mat-list-item {
-    display: flex;
-    width: calc(100% - 2px);
+    // width: calc(100% - 2px);
+    width: 100% !important;
     background: #ffffff;
-    border-radius: 0px 100px 100px 0px;
+    border-radius: 0;
     padding: 0px;
     color: #868e96;
     height: 45px;
     line-height: 45px;
     font-family: "Nunito", arial;
+  }
+  .mat-list-item:hover {
+    background: #d3efde;
+    transition: all 300ms ease-in-out;
+    border-radius: 0;
+    color: #62B984;
   }
   .mat-toolbar {
     background: inherit;
@@ -46,6 +52,13 @@
     font-family: "Nunito", arial;
     margin-top: 15px;
   }
+
+
+}
+
+.mat-nav-list .mat-list-item a{
+  display: block;
+  width: 100% !important;
 }
 
 .mat-toolbar.mat-primary {
@@ -59,9 +72,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   transition: all 0.3s;
-  min-height: 72px;
+  min-height: 60px;
   div {
     display: flex;
+    align-items: center;
   }
   div:nth-child(1) {
     flex: 1 1 100%;
@@ -78,6 +92,7 @@
   }
   div:nth-child(3) {
     flex: 1 1 0%;
+    max-width: 20%;
     box-sizing: border-box;
     justify-content: flex-end;
     .avatar {
@@ -88,4 +103,8 @@
       border-radius: 50% !important;
     }
   }
+}
+
+.active-list-item {
+  color: #62B984 !important; /* Note: You could also use a custom theme */
 }
